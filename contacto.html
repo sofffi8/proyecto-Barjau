@@ -7,89 +7,9 @@
     <meta name="author" content="Sofia Barjau" />
     <meta name="description" content="" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <style>
-      body {
-        font-family: "Lucida Console", "Courier New", monospace;
-        background: linear-gradient(
-          to right,
-          rgb(189, 189, 255),
-          rgb(255, 233, 236)
-        );
-
-        padding: 0;
-        margin: 0;
-      }
-      header {
-        text-align: center;
-      }
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-      }
-      li {
-        float: left;
-      }
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      li a:hover:not(.active) {
-        background-color: #111;
-      }
-
-      .active {
-        background-color: #04aa6d;
-      }
-      h1 {
-        background-color: black;
-        padding: 10px;
-        margin: 0;
-        color: #92a4ff;
-      }
-      input[type="text"],
-      input[type="email"],
-      textarea,
-      select {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-      input[type="submit"] {
-        width: 100%;
-        background-color: #4caf50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-      div.contenedor-formulario {
-        border-radius: 5px;
-        background-color: #f2f2f2;
-        padding: 20px;
-      }
-      .footer {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        clear: both;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/contacto.css">
+    
   </head>
   <body>
     <header>
@@ -103,10 +23,10 @@
         </ul>
       </nav>
     </header>
-    <br />
+    <br>
     <h2>Formulario:</h2>
     <hr />
-    <div class="contenedor-formulario">
+    <div class="contenedor">
       <form>
         <label for="nombre">Nombre: </label>
         <input
@@ -117,6 +37,8 @@
           required
           minlength="3"
         />
+        <br>
+        <br>
         <label for="apellido">Apellido: </label>
         <input
           type="text"
@@ -126,6 +48,8 @@
           required
           minlength="3"
         />
+        <br>
+        <br>
         <label for="mail">Mail: </label>
         <input
           type="email"
@@ -143,7 +67,7 @@
         <label for="numero">Numero de teléfono: </label>
         <input type="text" id="numero" name="numero" placeholder="Escribí tu numero de teléfono..." required>
         <br>
-
+        <br>
         <label for="pais">Pais: </label>
         <select name="pais" id="pais" required>
           <option value="Argentina" selected="selected">Argentina</option>
@@ -157,24 +81,28 @@
           <option value="Peru">Peru</option>
           <option value="Colombia">Colombia</option>
         </select>
+        <br>
+        <br>
         <label for="comentario">Comentario:</label>
         <textarea
           name="comentario"
           id="comentario"
           placeholder="Escribí tu comentario"
         ></textarea>
+        <br>
+        <br>
         <label for="motivo">Motivo de contacto: </label>
-        <br />
+        <br>
         <input type="radio" id="motivo" name="motivo" /><i>Deseo adoptar.</i>
-        <br />
+        <br>
         <input type="radio" id="motivo" name="motivo" /><i
           >Deseo colaborar monetariamente.</i
         >
-        <br />
+        <br>
         <input type="radio" id="motivo" name="motivo" /><i
           >Quiero ir a ver los animales.</i
         >
-        <br />
+        <br>
         <input type="radio" id="motivo" name="motivo" /><i
           >Quiero ser voluntario.</i
         >
@@ -194,8 +122,11 @@
           <option value="Cleo">Cleo</option>
         </select>
         <br>
+        <br>
         <label for="fecha">Fecha que desea solicitar la cita: </label>
         <input type="date" id="fecha" name="fecha" required>
+        <br>
+        <br>
         <input type="submit" value="Enviar">
       </form>
     </div>

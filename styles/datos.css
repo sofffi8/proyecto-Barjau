@@ -1,0 +1,36 @@
+.contenedor{
+  justify-content: center;
+}
+
+table{
+  border-color: collapse;
+  border: 2px solid rgb(184, 117, 9);
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  background-color: rgb(255, 224, 101);
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+th{
+  border: 1px solid rgba(0, 0, 0, 0.986);
+  padding: 10px;
+  background-color: rgb(231, 154, 61);
+}
+
+td{
+  border: 1px solid rgba(92, 87, 87, 0.463);
+  padding: 10px;
+}
+
+h2{
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+tr:hover{
+  background-color: rgba(254, 150, 24, 0.307);
+}
+
