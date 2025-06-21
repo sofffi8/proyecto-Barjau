@@ -7,9 +7,105 @@
     <meta name="author" content="Sofia Barjau" />
     <meta name="description" content="Primera pagina web" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/styles/index.css">
-    
+    <style>
+      body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #92a4ff;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #92a4ff;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      .image {
+        float: right;
+        margin: 0 0 20px 20px;
+        max-width: 25%;
+        height: auto;
+      }
+
+      .image2 {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 25%;
+        height: auto;
+      }
+      .article {
+        float: left;
+        width: 70%;
+        background-color: #fff;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #ccc;
+      }
+
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+      }
+    </style>
   </head>
   <body>
   
@@ -25,13 +121,14 @@
       </nav>
     </header>
     <br />
-    <h2 class="subtitulo">
+    <h2 style="margin: 15px">
       Bienvenidos, nuestra misión es encontrar un hogar para cada animalito.
     </h2>
     <hr />
-    <article class="contenedor">
-      <h3 class="tituloInterno">Sobre nosotros</h3>
-      <img class="imagen" src="img/img1.jpg" alt="Mascotas" width="180px"/>
+    <article class="container">
+      <img class="image" src="img/img1.jpg" alt="Mascotas" width="250px"/>
+      <h3>Sobre nosotros</h3>
+      
       <p>
         <b>Red de Adopción: Proyecto Patitas</b> es una iniciativa solidaria nacida en
         el año 2019, en la localidad de San Bernardo del Tuyú, Partido de la
@@ -48,18 +145,15 @@
         amigo fiel, <i>¡te invitamos a conocernos y cambiar una vida para siempre!</i>
       </p>
       <br>
-      
-      <h4 class="tituloInterno">¿Cómo adoptar en Proyecto Patitas?</h4>
-      <img class="imagen2" src="/img/img2.jpg" alt="Adopcion" width="180px"/>
+      <img class="image2" src="/img/img2.jpg" alt="Adopcion" width="230px"/>
+      <h4>¿Cómo adoptar en Proyecto Patitas?</h4>
       <p>
         En <b>Red de Adopción: Proyecto Patitas</b>,
         creemos que cada adopción debe ser responsable, consciente y amorosa.
         Por eso, seguimos un proceso sencillo pero comprometido para asegurarnos
         de que cada animal encuentre un hogar donde sea realmente feliz. 
         <br>
-        <b>Pasos para adoptar:</b> 
-        <br>
-        <b>Conocé a nuestros animales disponibles:</b> Podés ver fotos y
+        <b>Pasos para adoptar:</b> Conocé a nuestros animales disponibles: Podés ver fotos y
         descripciones en nuestra web o visitar nuestro refugio en San Bernardo
         del Tuyú. Tenemos perros y gatos, de distintas edades y
         personalidades. 
@@ -76,9 +170,8 @@
         sumar una patita más a tu familia, ¡te esperamos!
       </p>
       <br>
-      
-      <h4 class="tituloInterno">Cuidados básicos para tu nuevo compañero.</h4>
-      <img class="imagen" src="/img/img3.jpg" alt="Cuidados" width="180px"/>
+      <img class="image" src="/img/img3.jpg" alt="Cuidados" width="250px"/>
+      <h4>Cuidados básicos para tu nuevo compañero.</h4>
       <p>
        Adoptar es solo el primer
         paso. Cuidar a un animal con amor, paciencia y responsabilidad es lo que
@@ -87,7 +180,7 @@
         consejos útiles para que tu peludo se sienta feliz y seguro en su nuevo
         hogar.
       </p>
-      <h5 class="pequeñosSubtitulos">Higiene y salud:</h5>
+      <h5>Higiene y salud:</h5>
       <p>
         Visitas al veterinario: Llevá a tu mascota al menos una vez al año para
         un chequeo general, vacunas y desparasitación. 
@@ -95,7 +188,7 @@
         la especie y el tipo de pelaje, mantené su higiene con baños regulares y
         cepillados para evitar nudos y pulgas. 
       </p>
-      <h5 class="pequeñosSubtitulos">Amor y tiempo:</h5>
+      <h5>Amor y tiempo:</h5>
       <p>
         Brindar atención, juegos y paseos diarios. Ellos necesitan
         contacto y afecto,tené paciencia si muestra miedo o ansiedad al principio, ya que muchos vienen de situaciones
@@ -111,3 +204,4 @@
     </footer>
   </body>
 </html>
+
