@@ -7,9 +7,79 @@
     <meta name="author" content="Sofia Barjau" />
     <meta name="description" content="" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/styles/datos.css">
-    
+    <style>
+      body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      header {
+        text-align: center;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      .active {
+        background-color: #92a4ff;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #92a4ff;
+      }
+      table {
+        border-collapse: collapse;
+        border: 2px solid rgb(200, 200, 200);
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        background-color: #fff;
+      }
+      td {
+        border: 1px solid rgb(190, 190, 190);
+        padding: 10px 20px;
+      }
+      th {
+        border: 1px solid rgb(190, 190, 190);
+        padding: 10px 20px;
+        background-color: rgb(162, 162, 162);
+      }
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+      }
+    </style>
   </head>
     <body>
     
@@ -25,12 +95,15 @@
       </nav>
     </header> 
   
-    <h2 class="tituloInterno">Nuestros horarios:</h2>
+    <h2>Nuestros horarios:</h2>
     <hr>
-    <div class="contenedor">
+    <div>
       <table>
-        
-        <th>Horario|<sup>Días</sup></th>
+        <colgroup>
+          <col style="background-color: rgb(207, 207, 207);">
+         
+        </colgroup>
+        <th> </th>
         <th>Lunes</th>
         <th>Martes</th>
         <th>Miercoles</th>
@@ -62,10 +135,14 @@
 
       </table>
       <hr>
-      <h2 class="tituloInterno">Animalitos que necesitan hogar:</h2>
+      <h2>Animalitos que necesitan hogar:</h2>
     <hr>
-    <div class="contenedor">
+    <div>
       <table>
+        <colgroup>
+          <col style="background-color: rgb(207, 207, 207);">
+         
+        </colgroup>
         <th>Nombre</th>
         <th>Especie</th>
         <th>Edad</th>
@@ -159,7 +236,7 @@
       <br>
     </div>
     <div style="text-align: center; margin-top: 20px;">
-      <h3 class="tituloInterno">Nuestra ubicación:</h3>
+      <h3>Nuestra ubicación:</h3>
       <iframe width="1500" height="250" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1599.34004143111!2d-56.688682461270204!3d-36.70622484271125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzbCsDQyJzIyLjQiUyA1NsKwNDEnMTQuNiJX!5e0!3m2!1ses!2sar!4v1747440354545!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <br>
